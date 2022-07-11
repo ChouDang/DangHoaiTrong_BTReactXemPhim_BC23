@@ -19,7 +19,7 @@ const xemPhimRedux = (state = stateDefault, action) => {
     }
     case HUY_GHE: {
       let danhSachGheDangUpdate = [...state.danhSachGheDangDat];
-      let index = danhSachGheDangUpdate.findIndex(gheDangDat => gheDangDat.soGhe === action.ghe.soGhe);
+      let index = danhSachGheDangUpdate.findIndex(gheDangDat => gheDangDat.soGhe === action.soGhe);
       if (index !== -1) {
         danhSachGheDangUpdate.splice(index, 1)
       }
